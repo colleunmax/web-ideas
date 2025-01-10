@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("./handwriting/handwriting.css");
+
+:root {
+  --light: #F3FFEF;
+  --light-2: #DEE9DA;
+  --dark: #435C48;
+  --dark-2: #596F50;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--dark);
+    --foreground: var(--light);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: var(--light);
+    --foreground: var(--dark);
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
