@@ -1,0 +1,96 @@
+html:has(body main#handwriting-main), body:has(main#handwriting-main) {
+    height: 100%;
+}
+
+main#handwriting-main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    h1 {
+        opacity: 0;
+    }
+
+    div.handwriting-container {
+        --svg-1-offset: -80;
+        --svg-2-offset: -140;
+        --svg-3-offset: -70;
+        --svg-4-offset: -70;
+        --svg-5-offset: -30;
+        --svg-6-offset: -30;
+        --svg-7-offset: -55;
+        scale: 3;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        width: fit-content;
+        gap: 0.1rem;
+
+        svg#svg-1, svg#svg-2 {
+            margin-right: 0.75rem;
+        }
+    
+        svg#svg-1 path {
+            stroke-dashoffset: -200;
+            stroke-dasharray: 100 200;
+            animation: handwriting 1.5s ease-in 2s forwards;
+        }
+    
+        svg#svg-2 path {
+            stroke-dashoffset: -200;
+            stroke-dasharray: 130 200;
+            animation: handwriting 1.5s ease-in 3s forwards;
+            
+        }
+    
+        svg#svg-3 path {
+            stroke-dashoffset: -200;
+            stroke-dasharray: 100 200;
+            animation: handwriting 1.5s ease-in 4s forwards;
+        }
+    
+        svg#svg-4 path {
+            stroke-dashoffset: -200;
+            stroke-dasharray: 100 200;
+            animation: handwriting 1.5s ease-in 4.75s forwards;
+        }
+    
+        svg#svg-5 path, svg#svg-6 path {
+            stroke-dashoffset: -200;
+            stroke-dasharray: 100 200;
+        }
+    
+        svg#svg-5 path {
+            animation: handwriting 1s ease-in 5.25s forwards;
+        }
+    
+        svg#svg-6 path {
+            animation: handwriting 1s ease-in 5.50s forwards;
+        }
+    
+        svg#svg-7 path {
+            stroke-dashoffset: -200;
+            stroke-dasharray: 100 200;
+            stroke-dashoffset: -55;
+            animation: handwriting 2.5s ease-out 5.75s forwards;
+        }
+    
+        svg path {
+            stroke-width: 4px;
+            stroke-linecap: round;
+            stroke: var(--foreground);
+        }
+
+    }
+}
+
+@keyframes handwriting {
+    0% {
+        stroke-dashoffset: 200;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
