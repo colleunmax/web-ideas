@@ -3,8 +3,8 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    default: "Item",
-    template: "Colle Ideas | %s",
+    template: 'CI | %s',
+    default: 'Page',
   },
   icons: [
     {

@@ -17,7 +17,7 @@ const ideasLi = ideas.map(({path, title, description, createdAt}: idea, key) => 
 })
 
 export const metadata: Metadata = {
-  title: "Home"
+  title: "Colle Ideas"
 }
 
 export default function Home() {
