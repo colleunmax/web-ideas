@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "soulcraft";
+    src: url("../../../public/fonts/soulcraft/Soulcraft.ttf");
+}
+
+.soulcraft {
+    display: block;
+    width: fit;
+    height: fit;
+    position: relative;
+    font-family: "soulcraft";
+    font-stretch: condensed;
+    transition: all 250ms;
+}
+
+.soulcraft::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0rem;
+    background-color: currentColor;
+    height: 0.2rem;
+    width: 0;
+    transition: all 350ms;
+    margin-left: 50%;
+}
+
+.soulcraft:hover::before {
+    width: 100%;
+    margin-left: 0;
+}
+
+.soulcraft:hover {
+    font-stretch: expanded;
+}

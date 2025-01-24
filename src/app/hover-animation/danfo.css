@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "danfo";
+    src: url("../../../public/fonts/danfo/variable/Danfo[ELSH].ttf");
+}
+
+.danfo {
+    font-family: "danfo";
+    font-size: 1.25em;
+    font-variation-settings: 
+    "ELSH" 0;
+    transition: all 250ms;
+}
+
+.danfo:hover {
+    font-variation-settings: 
+    "ELSH" 150;
+}

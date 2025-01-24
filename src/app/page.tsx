@@ -4,6 +4,7 @@ import Link from "next/link"
 
 const ideas: idea[] = [
   {path: "/handwriting", title:"Handwriting animation", description: "Handwirting text animation (svg)", createdAt: new Date("2025-01-10")},
+  {path: "/hover-animation", title:"Hover animation", description: "Some hoveranimation, made with variable fonts", createdAt: new Date("2025-01-24")}
 ]
 
 const ideasLi = ideas.map(({path, title, description, createdAt}: idea, key) => {

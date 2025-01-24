@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "kredon";
+    src: url("../../../public/fonts/Kreadon-fonts/fonts/variable/Kreadon[ital\,wght].ttf") format("TrueType");
+}
+
+.kredon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -0.2rem;
+    background-color: currentColor;
+    height: 0.05rem;
+    width: 0;
+    transition: all 250ms;
+    margin-left: 50%;
+}
+
+.kredon {
+    position: relative;
+    font-family: "kredon";
+    transition: 100ms ease-out;
+}
+
+.kredon:hover::before {
+    margin-left: 10%;
+    width: 80%;
+}
+
+.kredon:hover {
+    font-style: oblique 15deg;
+}
+
+.kredon span {
+    position: relative;
+    top: 0.2rem;
+    font-size: 0.5em;
+    opacity: 50%;
+    padding-right: 0.5em;
+}

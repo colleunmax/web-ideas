@@ -1,0 +1,31 @@
+@import url("./kredon.css");
+@import url("./soulcraft.css");
+@import url("./danfo.css");
+
+body:has(main#hover-animation-main),
+html:has(body > main#hover-animation-main),
+main#hover-animation-main {
+    height: 100%;
+}
+
+li.hoveranim-li {
+    width: fit-content;
+    cursor: pointer;
+}
+
+main#hover-animation-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main#hover-animation-main > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 2rem;
+    width: 100%;
+}

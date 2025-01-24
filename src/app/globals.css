@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("./handwriting/handwriting.css");
+@import url("./hover-animation/hover-animatin.css");
 
 :root {
   --light: #F3FFEF;
