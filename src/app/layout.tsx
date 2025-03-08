@@ -1,19 +1,9 @@
 import "./globals.css"
 import Link from "next/link"
-import { Leckerli_One } from "next/font/google"
-import { Cambo } from "next/font/google"
 import { Metadata } from "next"
 import Header from "./widgets/header"
-
-export const cambo = Cambo({
-  weight: ["400"],
-  subsets: ["latin"]
-})
-
-export const leckerliOne = Leckerli_One({
-  weight: ["400"],
-  subsets: ["latin"]
-})
+import { cambo } from "./fonts/cambo"
+import { leckerliOne } from "./fonts/leckerli-one"
 
 export const metadata: Metadata = {
   title: {

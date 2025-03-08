@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import idea from "@/types/idea"
 import Link from "next/link"
-import { leckerliOne } from "./layout"
+import { leckerliOne } from "./fonts/leckerli-one"
 
 const ideas: idea[] = [
   {path: "/handwriting", title:"Handwriting animation", description: "Handwirting text animation (svg)", createdAt: new Date("2025-01-10")},
