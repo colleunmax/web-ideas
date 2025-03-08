@@ -5,10 +5,9 @@
 @import url("./hover-animation/hover-animatin.css");
 
 :root {
-  --light: #F3FFEF;
-  --light-2: #DEE9DA;
+  --light: #EBF5E8;
+  --light-2: #84A37D;
   --dark: #435C48;
-  --dark-2: #596F50;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,8 +19,8 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background: var(--light);
-    --foreground: var(--dark);
+    --background: var(--light-2);
+    --foreground: white;
   }
 }
 
