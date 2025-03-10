@@ -13,6 +13,10 @@ main#handwriting-main {
         opacity: 0;
     }
 
+    div.handwriting-wraper {
+        width: fit-content;
+    }
+
     div.handwriting-container {
         --svg-1-offset: -80;
         --svg-2-offset: -140;
@@ -21,11 +25,9 @@ main#handwriting-main {
         --svg-5-offset: -30;
         --svg-6-offset: -30;
         --svg-7-offset: -55;
-        scale: 3;
         display: flex;
         flex-direction: row;
         align-items: end;
-        width: fit-content;
         gap: 0.1rem;
 
         svg#svg-1, svg#svg-2 {
@@ -35,26 +37,26 @@ main#handwriting-main {
         svg#svg-1 path {
             stroke-dashoffset: -200;
             stroke-dasharray: 100 200;
-            animation: handwriting 1.5s ease-in 2s forwards;
+            animation: handwriting 1.5s ease-in 0.5s forwards;
         }
     
         svg#svg-2 path {
             stroke-dashoffset: -200;
             stroke-dasharray: 130 200;
-            animation: handwriting 1.5s ease-in 3s forwards;
+            animation: handwriting 1.5s ease-in 1.5s forwards;
             
         }
     
         svg#svg-3 path {
             stroke-dashoffset: -200;
             stroke-dasharray: 100 200;
-            animation: handwriting 1.5s ease-in 4s forwards;
+            animation: handwriting 1.5s ease-in 2s forwards;
         }
     
         svg#svg-4 path {
             stroke-dashoffset: -200;
             stroke-dasharray: 100 200;
-            animation: handwriting 1.5s ease-in 4.75s forwards;
+            animation: handwriting 1.5s ease-in 2.75s forwards;
         }
     
         svg#svg-5 path, svg#svg-6 path {
@@ -63,18 +65,18 @@ main#handwriting-main {
         }
     
         svg#svg-5 path {
-            animation: handwriting 1s ease-in 5.25s forwards;
+            animation: handwriting 1s ease-in 3.25s forwards;
         }
     
         svg#svg-6 path {
-            animation: handwriting 1s ease-in 5.50s forwards;
+            animation: handwriting 1s ease-in 3.50s forwards;
         }
     
         svg#svg-7 path {
             stroke-dashoffset: -200;
             stroke-dasharray: 100 200;
             stroke-dashoffset: -55;
-            animation: handwriting 2.5s ease-out 5.75s forwards;
+            animation: handwriting 2.5s ease-out 3.50s forwards;
         }
     
         svg path {
@@ -83,6 +85,12 @@ main#handwriting-main {
             stroke: var(--foreground);
         }
 
+    }
+}
+
+@media screen and (width > 500px) {
+    div.handwriting-container {
+        scale: 2;
     }
 }
 
